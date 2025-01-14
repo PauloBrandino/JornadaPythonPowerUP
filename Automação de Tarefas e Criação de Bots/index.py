@@ -8,7 +8,7 @@ pyautogui.PAUSE = 0.3
 pyautogui.press('win')
 pyautogui.write('chrome')
 pyautogui.press('enter')
-time.sleep(5)
+time.sleep(2)
 
 # Aceess the URL
 pyautogui.write('https://dlp.hashtagtreinamentos.com/python/intensivao/login')
@@ -26,7 +26,7 @@ time.sleep(3)
 
 # Import products list
 
-products = pd.read_csv('products.csv')
+products = pd.read_csv('./products.csv')
 
 # Add products
 for product in products.index:
